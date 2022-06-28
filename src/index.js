@@ -26,7 +26,7 @@ root.render(
             link = "link2"
             />
             <Cards
-            imgsrc = "images//movie-3.jpg"
+            imgsrc = "images/movie-3.jpg"
             title = "Superman"
             desc = "Superhero movie"
             link = "link2"
