@@ -1,14 +1,23 @@
 import React from "react";
 
+const d = new Date();
+let a = d.getHours();
+let b = d.getMinutes();
+let c = 0;
+if(a%12==0){
+    c = a;
+}
+else{
+    c = a%12;
+}
+
 function Cards(props) {
     return(
       <>
                 <div className="card" style={{width: 18 + 'rem'}}>
-                    <img className="card-img-top" src={props.imgsrc} alt="myPic"/>
                     <div className="card-body">
-                        <span className="card-title">{props.title}</span>
-                        <h3 className='card-text'>{props.desc}</h3>
-                        <a href={props.link} target="_blank" className="btn btn-primary">Go to movie</a>
+                        <span className="card-title"></span>
+                        <h3 className='card-text'>{`${c}:${b}`}</h3>
                     </div>
                 </div>
             
